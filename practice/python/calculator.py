@@ -1,6 +1,6 @@
 def run_calculator():
     print("--- Simple Terminal Calculator ---")
-    
+    while True:
     try:
         num1 = float(input("Enter the first number: "))
         num2 = float(input("Enter the second number: "))
@@ -30,6 +30,11 @@ def run_calculator():
             print(f"Result: {num1} / {num2} = {result}")
     else:
         print("Error: Invalid operator. Please use +, -, *, or /.")
+        continue
+    choice = input("\nDo you want to perform another calculation? (y/n): ").strip().lower()
+        if choice != 'y':
+            print("Goodbye!")
+            break
 
 if __name__ == "__main__":
     run_calculator()
