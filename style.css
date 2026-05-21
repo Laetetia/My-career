@@ -141,3 +141,19 @@ ul li:hover {
 .card:hover {
     box-shadow: 0 8px 25px rgba(56, 189, 248, 0.3);
 }
+.light-mode {
+    background: #f1f5f9;
+    color: #0f172a;
+}
+
+.light-mode .card {
+    background: white;
+    color: #0f172a;
+}
+.hero {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

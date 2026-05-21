@@ -10,3 +10,8 @@ function typeEffect() {
 }
 
 window.onload = typeEffect;
+const toggleBtn = document.getElementById("themeToggle");
+
+toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("light-mode");
+});
