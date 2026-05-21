@@ -134,3 +134,10 @@ ul li:hover {
     color: #38bdf8;
     margin-bottom: 10px;
 }
+.card {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.card:hover {
+    box-shadow: 0 8px 25px rgba(56, 189, 248, 0.3);
+}
