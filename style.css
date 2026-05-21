@@ -157,3 +157,21 @@ ul li:hover {
     justify-content: center;
     align-items: center;
 }
+.hero h1 {
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 18px;
+    opacity: 0.8;
+}
+section {
+    margin-bottom: 40px;
+}
+.contact {
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+}
