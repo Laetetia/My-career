@@ -15,3 +15,10 @@ const toggleBtn = document.getElementById("themeToggle");
 toggleBtn.addEventListener("click", () => {
     document.body.classList.toggle("light-mode");
 });
+const form = document.querySelector(".contact-form");
+
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    alert("Message sent successfully! 🚀");
+});
