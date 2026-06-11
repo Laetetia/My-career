@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laetetia | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 <button id="themeToggle">Change Theme</button>
     <header class="hero">
-        <h1></h1>
+       <h1>Laetetia's Portfolio</h1>
         <p>A Computer Science student building real-world software skills.</p>
     </header>
 
@@ -67,7 +67,6 @@
 
  
 
-
-    <script src="script.js"></script>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>

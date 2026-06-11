@@ -206,3 +206,56 @@ section {
 .contact-form button:hover {
     background: #0ea5e9;
 }
+#themeToggle {
+    background: #38bdf8;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+#themeToggle:hover {
+    background: #0ea5e9;
+}
+a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.task-container {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.task-container input {
+    padding: 10px;
+    width: 70%;
+    border: none;
+    border-radius: 8px;
+}
+
+.task-container button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background: #38bdf8;
+    color: white;
+    cursor: pointer;
+}
+
+.task-container ul {
+    margin-top: 20px;
+}
+
+.task-container li {
+    background: #1e293b;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 8px;
+}
