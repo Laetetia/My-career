@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect, url_for
 
 app = Flask(__name__)
 
@@ -8,7 +8,6 @@ tasks = []
 def home():
     return render_template("index.html")
 
-
 @app.route("/tasks", methods=["GET", "POST"])
 def task_manager():
     if request.method == "POST":
@@ -17,6 +16,12 @@ def task_manager():
 
     return render_template("tasks.html", tasks=tasks)
 
+@app.route("/delete/<int:index>")
+def delete_task(index):
+    if 0 <= index < len(tasks):
+        tasks.pop(index)
+
+    return redirect(url_for("task_manager"))
 
 if __name__ == "__main__":
     app.run(debug=True)
